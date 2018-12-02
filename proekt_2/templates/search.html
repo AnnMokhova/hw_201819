@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Поиск</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<div class="jumbotron text-center" style='background:#00cc99'>
+  <h1><font face="Calibri">Выполните поиск</h1>
+  <p><font face="Calibri">по возрасту и месту рождения респондента</p> 
+</div>
+  
+<div class="container" style='background:#ccfff3'>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3><font face="Calibri">Введите возраст респондента цифрами</h3>
+      <form>
+      <label><font size="3" face="Calibri">Возраст: <input type="text" name="search_age" required></label><br>
+    </div>
+    <div class="col-sm-6">
+      <h3><font face="Calibri">Введите место рождения респондента <i>также, как было указано в анкете</i></h3>
+      <label><font size="3" face="Calibri">Место рождения: <input type="text" name="search_place_of_birth" required></label><br>
+      <input type="submit" value="Отправить">
+      </form>
+	  </div>
+  </div>
+</div>
+
+<a href={{ url_for('ask') }}>Перейти на главную страницу с анкетой</a><br>
+<a href={{ url_for('results') }}>Перейти на страницу с результатом поиска</a>
+
+</body>
+</html>
